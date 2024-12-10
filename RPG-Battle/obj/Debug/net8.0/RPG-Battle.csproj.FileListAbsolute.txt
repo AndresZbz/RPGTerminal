@@ -1,0 +1,14 @@
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.AssemblyInfoInputs.cache
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.AssemblyInfo.cs
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.csproj.CoreCompileInputs.cache
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\bin\Debug\net8.0\RPG-Battle.exe
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\bin\Debug\net8.0\RPG-Battle.deps.json
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\bin\Debug\net8.0\RPG-Battle.runtimeconfig.json
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\bin\Debug\net8.0\RPG-Battle.dll
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\bin\Debug\net8.0\RPG-Battle.pdb
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.dll
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\refint\RPG-Battle.dll
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.pdb
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.genruntimeconfig.cache
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\ref\RPG-Battle.dll
