@@ -12,3 +12,4 @@ C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug
 C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.pdb
 C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.genruntimeconfig.cache
 C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\ref\RPG-Battle.dll
+C:\Users\Andre\OneDrive\Documents\programming\c#\RPG-Battle\RPG-Battle\obj\Debug\net8.0\RPG-Battle.sourcelink.json

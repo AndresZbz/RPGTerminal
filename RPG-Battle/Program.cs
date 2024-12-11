@@ -3,10 +3,37 @@
     public class Program
     {
         static Player player = new Player();
+        public static void Menu()
+        {
+            Console.Clear();
+            TextManager.center_text("Welcome to this Console Game!\n", ConsoleColor.Cyan);
+            Console.ResetColor();
+
+            TextManager.center_text("Please select an option:\n\n");
+            TextManager.center_text("1 - New Game\n");
+            TextManager.center_text("2 - Load Game\n");
+
+            int option =  Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    intro();
+                    break;
+
+                case 2:
+                    //todo
+                    break;
+
+                default:
+                    Menu();
+                    break;
+            }
+
+        }
+
         public static void intro()
         {
             Console.Clear();
-            Console.WriteLine("Welcome to this Console Game!\n");
             Console.Write("Please choose a name: ");
             string name = Console.ReadLine();
 
@@ -39,13 +66,7 @@
         public static void Main(string[] args)
         {
             //player.load_data();
-            if (player.name == "")
-            {
-                intro();
-            } else
-            {
-                Console.WriteLine("data loaded, hello ");
-            }
+            Menu();
 
         }
     }
