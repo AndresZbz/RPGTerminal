@@ -1,4 +1,6 @@
-﻿namespace RPG_Battle
+﻿
+
+namespace RPG_Battle
 {
     public class Program
     {
@@ -6,12 +8,12 @@
         public static void Menu()
         {
             Console.Clear();
-            TextManager.center_text("Welcome to this Console Game!\n", ConsoleColor.Cyan);
+            TextManager.centerText("Welcome to this Console Game!\n", ConsoleColor.Cyan);
             Console.ResetColor();
 
-            TextManager.center_text("Please select an option:\n\n");
-            TextManager.center_text("1 - New Game\n");
-            TextManager.center_text("2 - Load Game\n");
+            TextManager.centerText("Please select an option:\n\n");
+            TextManager.centerText("1 - New Game\n");
+            TextManager.centerText("2 - Load Game\n");
 
             int option =  Convert.ToInt32(Console.ReadLine());
             switch(option)
@@ -61,6 +63,7 @@
         {
             //to-do
             player.show_stats();
+            player.save_data();
         }
 
         public static void Main(string[] args)

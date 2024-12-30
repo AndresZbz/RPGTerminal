@@ -2,7 +2,7 @@
 {
     public class TextManager
     {
-        public static void center_text(string text, ConsoleColor? color = null)
+        public static void centerText(string text, ConsoleColor? color = null)
         {
             if (color.HasValue)
             {

@@ -1,13 +1,15 @@
-﻿namespace RPG_Battle
+﻿using System.Text.Json;
+
+namespace RPG_Battle
 {
     internal class Player
     {
-        public string name = "";
-        public int health = 200;
-        public int money = 1000;
-        public int damage = 50;
-        public int defense = 20;
-        public string[] inventory = { "stick", "paper" };
+        public string name { get; set; } = "";
+        public int health { get; set; } = 200;
+        public int money  { get; set; } = 1000;
+        public int damage { get; set; } = 50;
+        public int defense { get; set; } = 20;
+        public string[] inventory { get; set; } = { "stick", "paper" };
 
         public void show_stats()
         {
@@ -20,36 +22,39 @@
         {
             Console.WriteLine(" do something ");
         }
-
-        //Saves the data in bin/Debug/net8.0/gamedata.txt
         public void save_data()
         {
 
-            string inventoryString = string.Join(",", inventory);
-
-            string[] data_to_save = { $"{name}", $"{health}", $"{money}", $"{damage}", $"{defense}", inventoryString };
+            string json = JsonSerializer.Serialize(this);
 
             //this saves the file at bin/Debug/net8.0
-            File.WriteAllLines("gamedata.txt", data_to_save);
+            File.WriteAllText("gamedata.json", json);
+
 
             Console.WriteLine("Data saved!\n");
 
 
         }
-        //Reads the data saved
         public void load_data()
         {
-            string[] read_data = File.ReadAllLines("gamedata.txt");
 
-            name = read_data[0];
-            health = int.Parse(read_data[1]);
-            money = int.Parse(read_data[2]);
-            damage = int.Parse(read_data[3]);
-            defense = int.Parse(read_data[4]);
+            if(File.Exists("gamedata.json"))
+            {
+                string json = File.ReadAllText("gamedata.json");
+                Player data = JsonSerializer.Deserialize<Player>(json);
 
-            inventory = read_data[5].Split(',');
+                this.name = data.name;
+                this.health = data.health;
+                this.money = data.money;
+                this.damage = data.damage;
+                this.defense = data.defense;
+                this.inventory = data.inventory;
 
-
+                Console.WriteLine("Data loaded");
+            } else
+            {
+                Console.WriteLine("Could not find a save file");
+            }
             //just for debugging purpouses
             //foreach(string item in read_data)
             //{
